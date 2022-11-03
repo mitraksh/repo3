@@ -1,0 +1,22 @@
+{
+  "name": "@mitraksh/repo3",
+  "version": "1.0.0",
+  "description": "fetchjsondata",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mitraksh/repo3.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mitraksh/repo3/issues"
+  },
+  "homepage": "https://github.com/mitraksh/repo3#readme",
+  "dependencies": {
+    "@mitraksh/repo1": "file:../repo1"
+  }
+}
