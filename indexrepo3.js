@@ -4,7 +4,7 @@ const path = require("path");
 const { exec } = require("child_process");
 const packagerepo3 = require('./package.json');
 
-let repo3Path = path.join("/home/mitraksh/dev/mitraksh/scopedtask/repo2");
+let repo3Path = path.join("/home/mitraksh/dev/mitraksh/scopedtask/repo3");
 //define repo1 path and repo1 object path
 let repo1Path = path.join("/home/mitraksh/dev/mitraksh/scopedtask/repo1");
 let repo1ObjPath = path.join(repo1Path, "myobject.json");
@@ -35,7 +35,7 @@ async function main() {
     result.repo3 = repo3_version;
     await fs.writeJSON(repo1ObjPath, result);
     exec(
-      `cd ${repo1Path}  && git commit -am 'pre relese' && npm version patch && git push origin master`,
+      `cd ${repo1Path}  && git commit -am 'pre release' && npm version patch && git push origin master`,
       (err, stdout, stderr) => {
         if (err) {
           console.error(err);
